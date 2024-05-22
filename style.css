@@ -21,9 +21,11 @@ html , body{
 
 .no-con-front-message h1 {
     font-size: 30px;
+    padding: 4px 10px;
 }
 .no-con-front-message h2 {
     font-size: 20px;
+    padding: 4px 10px;
 }
 
 .no-con-popup {
