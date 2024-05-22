@@ -8,12 +8,13 @@ let popupPara = document.querySelector('.popup-texts > p')
 let popupIcn = document.querySelector('.popup-message > .icn > i')
 function checkConnection() {
     if(!window.navigator.onLine) {
-        popup.style.top = '0%'
+        setTimeout(() => popup.style.top = '0', 2000)
         count = 0
         popupUpperLine.style.backgroundColor = '#E54E65'
         popupIcn.style.backgroundColor = `#E54E65`
         popupHeading.innerHTML = `Lost Connection`
         popupPara.innerHTML = `Your network is unavailable. We will attempt to reconnect you in <b>10</b> seconds.`
+        
         // setInterval(() => {
         //     if(popupCountdown.innerText == 0) {
         //         popupCountdown.innerHTML = 11
