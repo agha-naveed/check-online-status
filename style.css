@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.no-con-front-message {
+    width: 100%;
+    height: 100vh;
+    background-color: #E3F2FD;
+    align-content: center;
+    text-align: center;
+}
+
+.no-con-front-message h1 {
+    font-size: 30px;
+}
+.no-con-front-message h2 {
+    font-size: 20px;
+}
+
+.no-con-popup {
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.3s ease-out;
+    width: 490px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.281);
+}
+.no-con-popup span {
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #E54E65;
+}
+.popup-message {
+    background-color: white;
+    display: flex;
+    gap: 15px;
+    padding: 17px 20px;
+    position: relative;
+    top: 3px;
+    z-index: 2;
+}
+.icn {
+    padding-top: 5px;
+}
+.icn i {
+    background-color: #E54E65;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 5px 9px;
+    font-size: 20px;
+    color: white;
+}
+
+.popup-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.popup-texts h2 {
+    font-size: 22px;
+}
+#reconnect-btn {
+    background-color: #5172E7;
+    outline: none;
+    border: none;
+    width: fit-content;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;    
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+#reconnect-btn:hover {
+    box-shadow: 2px 2px 15px rgba(22, 22, 22, 0.363);
+    background-color: #445fbd;
+}
+
+@media only screen and (max-width:550px) {
+    .no-con-popup {
+        width: 100%;
+    }
+}
