@@ -11,7 +11,6 @@ function checkConnection() {
     if(!window.navigator.onLine) {
         popup.style.top = '0%'
         count = 0
-        
         popupUpperLine.style.backgroundColor = '#E54E65'
         popupIcn.style.backgroundColor = `#E54E65`
         popupHeading.innerHTML = `Lost Connection`
