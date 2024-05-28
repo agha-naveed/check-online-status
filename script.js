@@ -13,14 +13,7 @@ function checkConnection() {
         popupUpperLine.style.backgroundColor = '#E54E65'
         popupIcn.style.backgroundColor = `#E54E65`
         popupHeading.innerHTML = `Lost Connection`
-        popupPara.innerHTML = `Your network is unavailable. We will attempt to reconnect you in <b>10</b> seconds.`
-        
-        // setInterval(() => {
-        //     if(popupCountdown.innerText == 0) {
-        //         popupCountdown.innerHTML = 11
-        //     }
-        //     popupCountdown.innerText--
-        // }, 1000)
+        popupPara.innerHTML = `Your network is unavailable. Please check your Internet Connectivity`
     }
 
     else if(window.navigator.onLine) {
